@@ -1,0 +1,25 @@
+/* .textWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: inherit;
+  flex-direction: column;
+  background-color: green;
+
+} */
+.textWrapper input {
+  padding: 12px 6px;
+
+  font-size: 20px;
+
+  border-bottom: 1px solid lightgray;
+  width: 100%;
+  border: none;
+}
+.errorMessage {
+  width: inherit;
+  text-align: left;
+  color: red;
+  font-size: 15px;
+  margin-top: 4px;
+}
