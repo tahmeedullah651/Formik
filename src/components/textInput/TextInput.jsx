@@ -1,4 +1,4 @@
-import "./textInput.css";
+import "./textinput.css";
 const TextInput = (props) => {
   return (
     <div className="textWrapper">
