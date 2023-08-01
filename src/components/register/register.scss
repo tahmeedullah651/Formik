@@ -17,7 +17,7 @@
       .left{
          width: 50%;
            
-           background:linear-gradient(rgba(39,11,96,0.5),rgba(39,11,96,0.5)), url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fphotos%2Fregistration-form&psig=AOvVaw3b3NlQZs4tSoHFNaTNcBsj&ust=1690864716362000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCPDm6YuQuIADFQAAAAAdAAAAABAE") center;
+           background:linear-gradient(rgba(39,11,96,0.5),rgba(39,11,96,0.5)), url("https://images.unsplash.com/photo-1664575602276-acd073f104c1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGJ1c2luZXNzfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60") center;
            background-size: cover;
            padding: 50px;
            display: flex;
@@ -60,6 +60,10 @@
               display: flex;
               flex-direction: column;
               gap: 30px;
+          }
+          input{
+            align-self: flex-start;
+            padding: 5px;
           }
         
           button{

@@ -47,6 +47,14 @@ import TextInput from "../textInput/TextInput";
 import LoginSchema from "../../schemas/LoginSchema";
 import { useFormik } from "formik";
 const Register = () => {
+  const handleBox = (e) => {
+    const element = document.querySelectorAll("#password");
+    if (e.target.checked) {
+      element.forEach((item) => (item.type = "text"));
+    } else {
+      element.forEach((item) => (item.type = "password"));
+    }
+  };
   const { values, touched, handleBlur, handleChange, errors } = useFormik({
     initialValues: {
       username: "",
@@ -88,6 +96,7 @@ const Register = () => {
                 type="password"
                 name="password"
                 placeholder="password"
+                id="password"
                 value={values.password}
                 onBlur={handleBlur}
                 onChange={handleChange}
@@ -97,6 +106,7 @@ const Register = () => {
               <TextInput
                 type="password"
                 name="conformPassword"
+                id="password"
                 placeholder="conformPassword"
                 value={values.conformPassword}
                 onBlur={handleBlur}
@@ -108,6 +118,15 @@ const Register = () => {
                 }
                 errormessage={errors.conformPassword}
               />
+              <div>
+                <input
+                  type="checkbox"
+                  name="box"
+                  id="box"
+                  onChange={(e) => handleBox(e)}
+                />
+                <span> Show password</span>
+              </div>
               <button>Register</button>
             </form>
           </div>
